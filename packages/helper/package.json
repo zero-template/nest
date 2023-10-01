@@ -1,0 +1,16 @@
+{
+  "name": "@zero-template/helper",
+  "version": "1.0.0",
+  "description": "Zero nestjs helper",
+  "main": "dist/index.js",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Zero <gczgroup@qq.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+{
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.folders.associations": {
+    "passport": "admin",
+    "bootstrap": "app",
+    "repositories": "database",
+    "entities": "prisma"
+  },
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.files.associations": {
+    "*.typing.ts": "typescript-def",
+    "*.configuration.ts": "nest-service",
+    "*.entity.ts": "nest-pipe"
+  }
+}

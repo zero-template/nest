@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          "classValidatorShim": true,
+          "controllerKeyOfComment": "summary",
+          "introspectComments": true,
+          "dtoKeyOfComment": "description",
+          "controllerFileNameSuffix": ".controller.ts",
+          "dtoFileNameSuffix": [".dto.ts", ".res.dto.ts"],
+          "typeFileNameSuffix": [".input.ts", ".args.ts", ".entity.ts", ".model.ts"]
+        }
+      }
+    ]
+  },
+  "generateOptions": {
+    "spec": false
+  }
+}

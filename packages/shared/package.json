@@ -1,0 +1,15 @@
+{
+  "name": "@zero-template/shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typeorm": "typeorm-ts-node-commonjs -d ./src/db.config.ts",
+    "migration:generate": "pnpm run typeorm migration:generate ./src/migrations/rex",
+    "migration:run": "pnpm run typeorm migration:run"
+  },
+  "author": "Zero <gczgroup@qq.com>"
+}
