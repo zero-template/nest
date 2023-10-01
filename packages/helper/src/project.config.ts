@@ -17,4 +17,7 @@ export default defineConfig({
     .setLicense('UNLICENSE', '')
     .addBearerAuth(),
   typeormConfig: false,
+  enableHelmet: true,
+  enableCookieParser: true,
+  enableRateLimit: {},
 });

@@ -10,6 +10,6 @@ export class ValidationPipeConfiguration extends Logger implements IBootStrapCon
 
   intercept(app: INestApplication<any>): void {
     app.useGlobalPipes(new ValidationPipe());
-    this.debug('ValidationPipe is loaded');
+    this.debug('ClassValidationPipe is loaded');
   }
 }
