@@ -11,6 +11,7 @@
     "prepare": "husky install;pnpm build:helper;pnpm build:shared",
     "lint-staged": "lint-staged"
   },
+  "packageManager": "pnpm@8.8.0",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
@@ -33,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "@changesets/cli": "^2.27.1",
     "@commitlint/types": "^17.4.4",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",

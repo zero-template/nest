@@ -1,6 +1,6 @@
 import { INestApplication, Logger } from '@nestjs/common';
 import { BootConfiguration, IBootStrapConfiguration } from '@zero-template/helper';
-import { ValidationPipe } from '../pipes/validation.pipe';
+import { EnglishValidationPipe } from '../pipes/englishValidation.pipe';
 
 @BootConfiguration
 export class ValidationPipeConfiguration extends Logger implements IBootStrapConfiguration {
@@ -9,7 +9,8 @@ export class ValidationPipeConfiguration extends Logger implements IBootStrapCon
   }
 
   intercept(app: INestApplication<any>): void {
-    app.useGlobalPipes(new ValidationPipe());
+    // app.useGlobalPipes(new ChineseValidationPipe());
+    app.useGlobalPipes(new EnglishValidationPipe());
     this.debug('ClassValidationPipe is loaded');
   }
 }

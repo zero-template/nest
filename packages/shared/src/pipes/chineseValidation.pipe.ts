@@ -3,7 +3,7 @@ import { ValidationError, validate } from 'class-validator';
 import { plainToInstance } from 'class-transformer';
 
 @Pipe()
-export class ValidationPipe implements PipeTransform {
+export class ChineseValidationPipe implements PipeTransform {
   /**
    * 获取目前真正的错误信息
    *
